@@ -1,0 +1,21 @@
+{
+  "name": "talonon/tclink",
+  "description": "Trustcommerce API",
+  "authors": [
+    {
+      "name": "Andy Muth",
+      "email": "andy@griffonco.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "laravel/framework": "^5.3",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Talonon\\Tclink\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
