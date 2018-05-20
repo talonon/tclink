@@ -10,12 +10,18 @@
   "require": {
     "php": ">=7.0.0",
     "laravel/framework": "^5.3",
-    "guzzlehttp/guzzle": "^6.2"
+    "guzzlehttp/guzzle": "^6.2",
+    "dazzle-php/dazzle": "^0.5.0@dev"
   },
   "autoload": {
     "psr-4": {
       "Talonon\\Tclink\\": "src/"
     }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "secure-http": false
+  }
 }
