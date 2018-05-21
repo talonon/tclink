@@ -33,4 +33,11 @@ class CreditResponse extends Response {
     return $this->_status === self::STATUS_ACCEPTED;
   }
 
+  public function toArray() : array {
+    return [
+      'status'  => $this->_status,
+      'transid' => $this->_transid
+    ];
+  }
+
 }
