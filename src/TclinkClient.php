@@ -59,16 +59,16 @@ class TclinkClient {
    * @return string|array
    */
   public function GetResponse() : ResponseInterface {
-    /*$result = $this->_sendRequest();
+    $result = $this->_sendRequest();
     $this->_lastHeaders = $result->getHeaders();
     $this->_lastStatusCode = $result->getStatusCode();
-    $body = $result->getBody()->getContents();*/
-    $body = <<<___MOCK___
+    $body = $result->getBody()->getContents();
+    /*$body = <<<___MOCK___
 """
 transid=123-1234567890
 status=accepted\n
 """
-___MOCK___;
+___MOCK___;*/
 
     $body = trim($body, '"');
     $parts = array_filter(explode("\n", $body));
