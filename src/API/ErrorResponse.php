@@ -25,7 +25,7 @@ class ErrorResponse implements ResponseInterface {
     return false;
   }
 
-  public function toArray() {
+  public function toArray() : array {
     return [
       'message'   => $this->_message,
       'offenders' => $this->_offenders
