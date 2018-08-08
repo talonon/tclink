@@ -1,11 +1,11 @@
 <?php namespace Talonon\Tclink\API\Credit;
 
-use Talonon\Tclink\API\HasTransid;
+use Talonon\Tclink\API\HasTransID;
 use Talonon\Tclink\API\Response;
 
 class CreditResponse extends Response {
 
-  use HasTransid;
+  use HasTransID;
 
   public function __construct(array $data) {
     parent::__construct($data);

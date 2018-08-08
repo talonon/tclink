@@ -1,12 +1,12 @@
 <?php namespace Talonon\Tclink\API\Credit;
 
-use Talonon\Tclink\API\HasTransid;
+use Talonon\Tclink\API\HasTransID;
 use Talonon\Tclink\API\RequestInterface;
 use Talonon\Tclink\API\ResponseInterface;
 
 class CreditRequest implements RequestInterface {
 
-  use HasTransid;
+  use HasTransID;
 
   /**
    * @var int

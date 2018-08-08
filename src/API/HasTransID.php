@@ -1,5 +1,5 @@
 <?php namespace Talonon\Tclink\API;
-trait HasTransid {
+trait HasTransID {
   /**
    * @var string
    */
